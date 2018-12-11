@@ -1,6 +1,6 @@
 # MCCHAT Protocol
 
-Specification of the MCCHAT protocol with RFC and web version for reference
+Specification of the MCCHAT protocol with [RFC](v1/rfc.txt) and [web version](https://marconi-chat.github.io/mcchat-protocol/) for reference
 
 ## Implementations
 
