@@ -67,8 +67,8 @@ Acknowledgements
 
    A client is identified by the server using an identifier that is
    unique to each client and is provided by the transfer layer. In the
-   default TCP implementation this identifier will be the source
-   IP address of the socket established with the client.
+   default TCP implementation this identifier will be the socket
+   established with the client (the client's IP & port).
    This is how the server manages every operation that requires the
    knowledge of the clients identity.
    (Subscriptions/Push notifications, etc.)
