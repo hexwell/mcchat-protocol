@@ -90,7 +90,7 @@ Acknowledgements
    The client can send messages to a topic even if it not subscribed
    itself to the topic. The message will be received only by the
    subscribers. If a client is subscribed to the topic the message is
-   sent to tho, it will get a copy of its own message from the server.
+   sent to, it will get a copy of its own message from the server.
 
    When a message is sent to a topic, all subscribed clients will
    receive the Message packet as sent by the original sender.
@@ -105,6 +105,12 @@ Acknowledgements
 
    Every string sent with the protocol is encoded with UTF-8 and
    ends when a 0x0 byte is encountered (null-terminated).
+
+   For this reasons, all strings sent with the protocol cannot contain
+   bytes with value 0x0.
+
+   Topic names cannot contain bytes with value 0x4, since TL packets
+   contain a list terminated by a 0x4 byte.
 
 5. MCCHAT Packets
 
